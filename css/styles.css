@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #1FA2FF;  /* fallback for old browsers */
+    /* background: linear-gradient(to right, #fbc2eb, #a6c1ee); */
+    /* background: linear-gradient(to right, #ff7f50, #ffa07a); */
+    /* background: linear-gradient(to right, #32cd32, #8fbc8f); */
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+.main{
+    margin-bottom: 50px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    margin: 0px auto;
+}
+
+/* Profile Image */
+.profile-image img {
+    width:150px;
+    height: 120px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+/* Profile Name */
+.profile-name h3 {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #002f4b;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 20px;
+    color: #002f4b;
+    cursor: pointer;
+}
+
+.large-icon {
+    font-size: 23px;
+}
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 0 10px;
+}
+
+/* Scroll text */
+.scroll-text{
+    display: flex;
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+    gap: 15px;
+}
+.scroll-text p {
+    margin: 0; /* Remove default paragraph margin */
+    line-height: 1; /* Ensures consistent spacing */
+    color:#002f4b;
+}
+.scroll-text i {
+    font-size: 17px; /* Adjust icon size */
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    color:#002f4b;
+
+}
+
+/* Container styles for layout */
+.container {
+    display: flex;
+    margin-bottom: -15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Gap between the boxes */
+}
+.categories {
+    color:#002f4b;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+
+}
+
+/* Styles for individual rounded boxes */
+.rounded-box {
+    width: 300%; /* Adjust box width */
+    height: 60px; /* Box height */
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color:#002f4b;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    animation: slideDownUp 2s infinite; /* Continuous slide down and up effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+    padding: 0 20px; /* Add padding inside the box */
+    gap: 15px; /* Gap between image and text */
+}
+
+.rounded-box a {
+    text-decoration: none; /* Remove text underline */
+    color: inherit; /* Inherit the text color from the parent element */
+    display: flex; /* Ensure the anchor tag behaves like a flex container */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    width: 100%; /* Make the anchor take full width of the .rounded-box */
+    height: 100%; /* Make the anchor take full height of the .rounded-box */
+}
+.box-image {
+    width: 50px; /* Image width */
+    height: 50px; /* Image height */
+    object-fit: contain; /* Ensure the image fits properly */
+    border-radius: 50%; /* Optional: Circular images */
+    position: absolute;
+    left: 15px;
+}
+
+/* Keyframes for the continuous downward and upward movement */
+.rounded-box:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.rounded-box:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.rounded-box:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.rounded-box:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.rounded-box:nth-child(5) {
+    animation-delay: 2s;
+}
+
+/* Keyframes for the continuous downward and upward movement */
+@keyframes slideDownUp {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translateY(7px); /* Move down */
+    }
+    100% {
+        transform: translateY(0); /* Move back to original position */
+    }
+}
+
+
+/* Hover Effect for the Rectangular Box */
+.rounded-box:hover {
+    background-color: rgb(236, 235, 235); /* Light background change on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: scale(1.05); /* Slightly scale the box on hover */
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .main{
+        margin-bottom: 110px;
+    }
+    .rounded-box {
+        width: 100%; /* Ensure the box width is 100% of its container */
+        max-width: 320px; /* Set a max width to prevent it from becoming too wide */
+        height: 50px; /* Reduce the height of the box */
+        margin: 0 auto; /* Center the boxes */
+        display: flex;
+        align-items: center; /* Center-align content vertically */
+        justify-content: flex-start; /* Align items to the left */
+        gap: 12px; /* Space between image and text */
+    }
+
+    .box-image {
+        width: 25px; /* Reduce image size */
+        height: 25px; /* Reduce image size */
+        object-fit: contain; /* Ensure image fits properly */
+        margin-left: 0px; /* Align image more to the left */
+    }
+    
+    .rounded-box span {
+        font-size: 12px; /* Smaller font size for text inside the rounded box */
+        color: #77a7f8; /* Adjust text color */
+        text-align: center; /* Center align the text */
+        flex-grow: 1; /* Ensure the text takes up available space */
+    }
+    .profile-name h3{
+        font-size: 16px;
+    }
+    .large-icon {
+        font-size: 19px;
+    }
+    .scroll-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main{
+        margin-bottom: 110px;
+    }
+    .rounded-box {
+        width: 90%; /* Further reduce width of rounded box */
+        max-width: 280px; /* Max width for small screens */
+        height: 45px; /* Further reduce box height */
+    }
+
+    .rounded-box span {
+        font-size: 10px; /* Smaller font size for text inside the rounded box */
+    }
+
+    .box-image {
+        width: 20px; /* Further reduce image size */
+        height: 20px; /* Further reduce image size */
+        margin-left: 0px; /* Align image more to the left */
+    }
+}
+@media (max-width: 1024px) {
+    .main {
+        margin-bottom: -80px;
+    }
+}
+
+
+
+
+
+
+

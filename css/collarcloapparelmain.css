@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1); /*okay*/
+  color: #103388;
+  padding: 20px 100px;
+}
+
+.btn-primary {
+  /* background: linear-gradient(to right, #ff7f50, #ffa07a) !important; */
+  border: none; /* Optional: Remove default border */
+  color: white; /* Ensures text is visible */
+}
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two containers per row */
+    gap: 40px;
+    padding: 30px;
+    max-width: 1500px;
+    margin: auto;
+  }
+.heading{
+  color: #002f4b;
+  font-size: 2.3em; /* Adjust size as needed */
+  font-weight: 600;
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+  
+}
+.product-heading {
+    color: #002f4b;
+    grid-column: span 2; /* So the heading takes full width in grid */
+    text-align: center;
+  font-family: "Open Sans", sans-serif !important;
+
+  }
+.card-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: transparent !important;   /* Remove white background */
+  /* border: 1px solid gray !important;          Add gray outline */
+  border-radius: 8px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  min-height: 40px; 
+  font-size: 18px;/* Optional: To standardize title space */
+  font-family: "Open Sans", sans-serif !important;
+  color: #002f4b !important;
+
+    
+}
+
+.card-text {
+  min-height: 40px;
+  font-size: 15px; /* Adjust based on average content */
+  font-family: "Open Sans", sans-serif !important;
+  color: #002f4b !important;
+
+}
+
+.btn {
+  margin-top: auto;
+  /* padding: 6px 15px !important; */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Responsive grid layout */
+/* Responsive grid layout for different screen sizes */
+/* Responsive grid layout for different screen sizes */
+@media (max-width: 1200px) {
+    .card-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row for large tablets */
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    body, html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-wrapper {
+        width: 100%;
+        max-width: 1100px;  /* Adjusted max width for medium desktops */
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        justify-items: center; /* Centers the grid items horizontally */
+        align-items: start;   /* Align items at the top */
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* 3 products per row */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .product-heading {
+        font-size: 1.3rem;  /* Slightly larger for better readability */
+        grid-column: span 2;
+        margin-bottom: 20px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card {
+        padding: 20px;  /* Increased padding for better spacing */
+        font-size: 1.05rem;  /* Slightly larger font */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;  /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+        max-width: 320px;  /* Slightly wider card */
+        background-color: #fff;  /* White card background */
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 130px;  /* Taller image for this range */
+        object-fit: contain;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-align: center;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-height: 2.5em;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        word-wrap: break-word;
+        text-align: center;
+        margin: 10px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-height: 3em;
+    }
+
+    .btn {
+        font-size: 0.95rem !important;
+        padding: 12px 18px !important;
+        text-align: center;
+        margin-top: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+  /* For tablets (577px to 1024px) */
+  @media (min-width: 577px) and (max-width: 1024px) {
+    body, html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-wrapper {
+        width: 100%;
+        max-width: 900px;  /* Adjusted max width for tablets */
+        margin: 0 auto;
+        padding: 15px;
+        display: grid;
+        gap: 15px;
+        justify-items: center; /* Centers the grid items horizontally */
+        align-items: start;   /* Align items at the top (avoid vertical centering to prevent overlap) */
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr;  /* 2 products per row inside the card container */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .product-heading {
+        font-size: 1.1rem;  /* Slightly larger for better readability on tablets */
+        grid-column: span 2;
+        margin-bottom: 15px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card {
+        padding: 15px;  /* Increased padding for better spacing */
+        font-size: 1rem;  /* Increased font size for better legibility */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;  /* Ensures content inside card is centered */
+        border-radius: 8px;  /* Rounded corners for better aesthetics */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Light shadow for card depth */
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 100px;  /* Adjusted height for tablet */
+        object-fit: contain;  /* Ensures the image covers the space while maintaining its aspect ratio */
+        border-radius: 5px;
+        margin-bottom: 12px;  /* Added margin to space out from the title */
+    }
+
+    .card-title {
+        font-size: 1.2rem;  /* Slightly larger font size */
+        margin: 10px 0;  /* Adjusted margin */
+        text-align: center;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-height: 2.5em;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        word-wrap: break-word;
+        text-align: center;
+        margin: 8px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-height: 3em;  /* Increased max height for better text visibility */
+    }
+
+    .btn {
+        font-size: 0.9rem !important;
+        padding: 10px 14px !important;  /* Adjusted button padding for better touch experience */
+        text-align: center;
+        margin-top: 15px;
+        background-color: #007bff;  /* Button background */
+        color: white;  /* White text */
+        border: none;
+        border-radius: 5px;  /* Rounded button corners */
+        cursor: pointer;  /* Change cursor on hover */
+        transition: background-color 0.3s;  /* Smooth hover transition */
+    }
+
+    .btn:hover {
+        background-color: #0056b3;  /* Darker button color on hover */
+    }
+}
+
+        
+        @media (max-width: 576px) {
+            body, html {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+              }
+            .card-wrapper {
+                width: 100%;              /* Slightly wider than default */
+                max-width: 520px;        /* Maximum width allowed */
+                margin: 0 auto;          /* Center horizontally */
+                padding: 10px -10px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+              }
+            .card-container {
+            grid-template-columns: 1fr 1fr; /* 2 products per row inside the card */
+            gap: 10px;
+            padding: 10px;
+            }
+        
+            .product-heading {
+            font-size: 1rem;
+            grid-column: span 2; /* Spans the entire width */
+            margin-bottom: 10px;
+            text-align: center;
+            white-space: nowrap; /* Prevents breaking */
+            overflow: hidden; /* Hides overflow */
+            text-overflow: ellipsis; /* Adds an ellipsis for overflow text */
+            }
+        
+            .card {
+            padding: 8px;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            }
+        
+            .card-img-top {
+                width: 100%;
+                height: 80px;              /* Uniform height for all */
+                object-fit: contain;       /* Fit full image without cropping */
+                border-radius: 5px;
+                display: block;
+                /* background-color: #f5f5f5; Optional: light background to fill space */
+              }
+              
+              .card-title {
+                font-size: 0.9rem;
+                margin: -15px -30px 0px 0px !important;
+                white-space: nowrap;      /* Prevent text from wrapping to new lines */
+                word-wrap: break-word;    /* Handle long words */
+                text-align: center;
+                overflow: hidden;         /* Hide overflowing text */
+                text-overflow: ellipsis;  /* Show ellipsis (...) when text is too long */
+                width: 100%;              /* Ensure full width */
+                max-height: 2.5em;        /* Optional: Limit the height to 2 lines */
+            }
+        
+            .card-text {
+                font-size: 0.8rem;
+                word-wrap: break-word;
+                text-align: center;
+                margin: 5px 0;
+                overflow: hidden;         /* Hide overflowing text */
+                text-overflow: ellipsis;  /* Add ellipsis when text is truncated */
+                width: 100%;
+                max-height: 3em;          /* Optional: Limit the height to 3 lines */
+            }
+        
+        
+            .btn {
+                font-size: 0.7rem !important;
+                padding: 5px 5px !important;
+                text-align: center;
+                margin-top: 8px;     /* Prevents padding from affecting width calculation */
+            }            
+  
+  
+  
+        }
