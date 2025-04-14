@@ -189,74 +189,161 @@ body {
     transform: scale(1.05); /* Slightly scale the box on hover */
 }
 /* Mobile responsiveness */
-@media (max-width: 768px) {
-    .main{
-        margin-bottom: 110px;
+@media (max-width: 1024px) {
+    .main {
+        margin-top: 150px; /* Move content upwards */
+        width: 100%; /* Ensure the width is 100% */
+        max-width: 100%; /* Prevent the container from being restricted */
+        padding: 10px;
     }
     .rounded-box {
-        width: 100%; /* Ensure the box width is 100% of its container */
-        max-width: 320px; /* Set a max width to prevent it from becoming too wide */
-        height: 50px; /* Reduce the height of the box */
-        margin: 0 auto; /* Center the boxes */
-        display: flex;
-        align-items: center; /* Center-align content vertically */
-        justify-content: flex-start; /* Align items to the left */
-        gap: 12px; /* Space between image and text */
+        width: 100%;
+        max-width: 380px;
+        height: 60px;
+    }
+    .box-image {
+        width: 32px;
+        height: 32px;
+        margin-left: 5px;
+    }
+    .rounded-box span {
+        font-size: 14px;
+    }
+    .profile-name h3 {
+        font-size: 20px;
+    }
+    .large-icon {
+        font-size: 24px;
+    }
+    .scroll-text {
+        font-size: 18px;
+    }
+    
+}
+/* For devices <= 992px (optional, if needed) */
+@media (max-width: 992px) {
+    .main {
+        margin-bottom: 110px;
+    }
+
+    .rounded-box {
+        width: 100%;
+        max-width: 350px;
+        height: 55px;
     }
 
     .box-image {
-        width: 25px; /* Reduce image size */
-        height: 25px; /* Reduce image size */
-        object-fit: contain; /* Ensure image fits properly */
-        margin-left: 0px; /* Align image more to the left */
+        width: 28px;
+        height: 28px;
+        margin-left: 5px;
     }
-    
+
     .rounded-box span {
-        font-size: 12px; /* Smaller font size for text inside the rounded box */
-        color: #77a7f8; /* Adjust text color */
-        text-align: center; /* Center align the text */
-        flex-grow: 1; /* Ensure the text takes up available space */
+        font-size: 13px;
     }
-    .profile-name h3{
+
+    .profile-name h3 {
+        font-size: 18px;
+    }
+
+    .large-icon {
+        font-size: 22px;
+    }
+
+    .scroll-text {
+        font-size: 17px;
+    }
+}
+
+
+/* For devices <= 768px */
+@media (max-width: 768px) {
+    .main {
+        margin-bottom: 150px;
+    }
+
+    .rounded-box {
+        width: 100%;
+        max-width: 320px;
+        height: 50px;
+    }
+
+    .box-image {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
+
+    .rounded-box span {
+        font-size: 12px;
+        color: #77a7f8;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .profile-name h3 {
         font-size: 16px;
     }
+
     .large-icon {
         font-size: 19px;
     }
+
     .scroll-text {
         font-size: 16px;
     }
 }
 
-@media (max-width: 480px) {
-    .main{
-        margin-bottom: 110px;
+
+/* For devices <= 576px */
+@media (max-width: 380px) {
+    .main {
+        margin-top: 30px; /* Push downward slightly */
     }
     .rounded-box {
-        width: 90%; /* Further reduce width of rounded box */
-        max-width: 280px; /* Max width for small screens */
-        height: 45px; /* Further reduce box height */
+        max-width: 240px;
+        height: 44px;
     }
-
-    .rounded-box span {
-        font-size: 10px; /* Smaller font size for text inside the rounded box */
-    }
-
     .box-image {
-        width: 20px; /* Further reduce image size */
-        height: 20px; /* Further reduce image size */
-        margin-left: 0px; /* Align image more to the left */
+        width: 18px;
+        height: 18px;
+    }
+    .rounded-box span {
+        font-size: 9px;
     }
 }
-@media (max-width: 1024px) {
+
+/* For general mobile (<= 576px) */
+@media (max-width: 576px) {
     .main {
-        margin-bottom: -80px;
+        margin-top: 50px; /* Small gap at the top */
+    }
+    .rounded-box {
+        width: 90%;
+        max-width: 280px;
+        height: 45px;
+    }
+    .box-image {
+        width: 20px;
+        height: 20px;
+    }
+    .rounded-box span {
+        font-size: 10px;
+    }
+    .profile-name h3 {
+        font-size: 14px;
+    }
+    .large-icon {
+        font-size: 18px;
+    }
+    .scroll-text {
+        font-size: 15px;
     }
 }
 
-
-
-
-
-
-
+/* For taller phones like iPhone XR, Galaxy A51/A71 (412-440px) */
+@media (min-width: 400px) and (max-width: 440px) {
+    .main {
+        margin-top: -100px !important; /* Pull everything upwards */
+    }
+}
