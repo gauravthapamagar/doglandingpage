@@ -189,37 +189,13 @@ body {
     transform: scale(1.05); /* Slightly scale the box on hover */
 }
 /* Mobile responsiveness */
+
 @media (max-width: 1024px) {
     .main {
-        margin-top: 150px; /* Move content upwards */
-        width: 100%; /* Ensure the width is 100% */
-        max-width: 100%; /* Prevent the container from being restricted */
-        padding: 10px;
+        margin-bottom: 500px ;
     }
-    .rounded-box {
-        width: 100%;
-        max-width: 380px;
-        height: 60px;
-    }
-    .box-image {
-        width: 32px;
-        height: 32px;
-        margin-left: 5px;
-    }
-    .rounded-box span {
-        font-size: 14px;
-    }
-    .profile-name h3 {
-        font-size: 20px;
-    }
-    .large-icon {
-        font-size: 24px;
-    }
-    .scroll-text {
-        font-size: 18px;
-    }
-    
 }
+
 /* For devices <= 992px (optional, if needed) */
 @media (max-width: 992px) {
     .main {
@@ -227,8 +203,8 @@ body {
     }
 
     .rounded-box {
-        width: 100%;
-        max-width: 350px;
+        width: 90%;
+        max-width: none; /* Let it take more space */
         height: 55px;
     }
 
