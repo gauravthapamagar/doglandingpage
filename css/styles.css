@@ -21,7 +21,10 @@ body {
 .main{
     margin-bottom: 50px;
 }
-
+.social-icons a {
+    color: inherit;         /* Inherits color from parent (like other icons) */
+    text-decoration: none;  /* Removes underline */
+}
 .profile-container {
     display: flex;
     flex-direction: column;
