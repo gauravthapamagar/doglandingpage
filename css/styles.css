@@ -149,6 +149,10 @@ body {
     position: absolute;
     left: 15px;
 }
+
+footer{
+    margin-top: 500px;
+}
 /* Keyframes for the continuous downward and upward movement */
 .rounded-box:nth-child(1) {
     animation-delay: 0s;
