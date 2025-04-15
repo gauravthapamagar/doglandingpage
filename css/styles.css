@@ -321,8 +321,8 @@ body {
 }
 
 /* For taller phones like iPhone XR, Galaxy A51/A71 (412-440px) */
-@media (min-width: 400px) and (max-width: 440px) {
+/* @media (min-width: 400px) and (max-width: 440px) {
     .main {
-        margin-top: -100px !important; /* Pull everything upwards */
+        margin-top: -100px !important; 
     }
-}
+} */
