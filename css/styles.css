@@ -199,7 +199,8 @@ body {
 /* For devices <= 992px (optional, if needed) */
 @media (max-width: 992px) {
     .main {
-        margin-bottom: 110px;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .rounded-box {
@@ -235,14 +236,16 @@ body {
 /* For devices <= 768px */
 @media (max-width: 768px) {
     .main {
-        margin-bottom: 150px;
+        margin-top: 10px;
+        width: 100%;
     }
 
-    .rounded-box {
+
+    /* .rounded-box {
         width: 100%;
         max-width: 320px;
         height: 50px;
-    }
+    } */
 
     .box-image {
         width: 25px;
@@ -252,7 +255,7 @@ body {
 
     .rounded-box span {
         font-size: 12px;
-        color: #77a7f8;
+        color: #002f4b;
         text-align: center;
         flex-grow: 1;
     }
