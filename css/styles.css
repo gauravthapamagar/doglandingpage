@@ -292,7 +292,7 @@ body {
 /* For general mobile (<= 576px) */
 @media (max-width: 576px) {
     .main {
-        margin-top: 50px; /* Small gap at the top */
+        margin-top: 10px; /* Small gap at the top */
     }
     .rounded-box {
         width: 90%;
